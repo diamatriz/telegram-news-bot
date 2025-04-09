@@ -6,6 +6,18 @@ import sharp from 'sharp';
 // Load environment variables
 dotenv.config();
 
+<<<<<<< HEAD
+=======
+// Validate required environment variables
+const requiredEnvVars = ['SUPABASE_URL', 'SUPABASE_KEY', 'TELEGRAM_BOT_TOKEN'];
+const missingEnvVars = requiredEnvVars.filter(envVar => !process.env[envVar]);
+
+if (missingEnvVars.length > 0) {
+  console.error('Missing required environment variables:', missingEnvVars);
+  process.exit(1);
+}
+
+>>>>>>> e212c8d (chore: update Telegram bot token)
 // Initialize Supabase client
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 

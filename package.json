@@ -1,15 +1,37 @@
 {
-  "name": "telegram-bot",
+  "name": "telegram-news-bot",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.4",
     "dotenv": "^16.4.7",
+    "node-fetch": "^3.3.2",
     "node-telegram-bot-api": "^0.63.0",
     "sharp": "^0.34.0"
-  }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/telegram-news-bot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "news",
+    "supabase"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/telegram-news-bot/issues"
+  },
+  "homepage": "https://github.com/yourusername/telegram-news-bot#readme"
 } 

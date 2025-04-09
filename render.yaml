@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-news-bot
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SUPABASE_URL
+        value: https://pgaypklckjbiozsgboil.supabase.co
+      - key: SUPABASE_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBnYXlwa2xja2piaW96c2dib2lsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM3NzQ4ODksImV4cCI6MjA1OTM1MDg4OX0.t87SHdkWm9sot2L-fFi-WUULKRvx9S-GhoIHDquj-4o
+      - key: TELEGRAM_BOT_TOKEN
+        value: 7591420953:AAGSOcAZOkJ7O58sBdW-BwdmXtv2TTLmkE0 
